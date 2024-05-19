@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>палички</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000" height="1000"
+    style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+    <script>
+        let canvas = document.getElementById("myCanvas");
+let cxt = canvas.getContext("2d");  
+for(i = 0; i!=20;i++){
+    let move1 = Math.random()*1000 
+    let move11 = Math.random()*1000 
+    let move2 = Math.random()*1000      
+    let move22 = Math.random()*1000                                            
+cxt.beginPath();                           
+cxt.moveTo(move1, move11);                       
+cxt.lineTo(move2, move22);                      
+cxt.lineWidth = 15;                        
+cxt.strokeStyle = "#0000ff";               
+cxt.lineCap = "square";                    
+cxt.stroke(); }
+    </script>
+</body>
+</html>

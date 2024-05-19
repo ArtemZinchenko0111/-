@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квадрати</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000" height="1000"
+    style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+    <script>
+        let canvas = document.getElementById("myCanvas");
+let cxt = canvas.getContext("2d");  
+for(i = 0; i!=20;i++){
+    let point1 = Math.random()*1000 
+    let point2 = Math.random()*1000      
+        cxt.fillStyle ="black";
+        cxt.fillRect(point1, point1, point2, point2); 
+        cxt.strokeStyle ="lightblue";
+        cxt.lineWidth = 20;
+        cxt.strokeRect(point1, point1,point2, point2); }
+    </script>
+</body>
+</html>
