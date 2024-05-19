@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="icon" href="img/fanta.png">
+	<title>my site</title>
+</head>
+<body>
+<style>
+	body{
+	background-color: lightblue;
+}
+header{
+	background-color: 	yellow;
+	height: 200px;
+}
+nav,aside{
+	width: 	20%;
+	float: 	left;
+}
+h2{
+	text-align: center;
+}
+main{
+	width: 	60%;
+	background-color: 	rgb(117, 241, 117);
+	float: 	left;
+}
+footer {
+	height: 300px;
+	background-color: rgb(139, 139, 221);
+	clear: 	both;
+}
+section{
+	margin: 20px;
+}
+article{
+	margin: 10px;
+	border: dashed 2px orange;
+	font-size: 	24px;
+	text-align: justify	;
+	padding: 10px;
+}
+iframe{
+	margin: auto;
+	display: block;
+}
+.bgvideo{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bgvideo video{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+top: 0;
+left: 0;
+object-fit: cover;
+z-index: 1;
+}
+h1{
+	z-index: 2;
+	color: cyan;
+	font-size: 7vw;
+}
+a {
+	text-decoration: none;
+}
+
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin:20px;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  width: 92%;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+img {
+	margin: 20px;
+	width: 168px;
+	height: 169px;
+}
+.cont{
+	font-size: 30px;
+	color: cyan;
+	text-align: center;
+}
+.cont1 {
+	font-size: 35px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.mapg{
+	width: 200px;
+	height: 200px;
+	float: right;
+	margin-right: 50px;
+}
+@media only screen and (max-width:800px){
+	nav,main,aside{
+		width: 100%;
+	}
+}
+</style>
+<header>
+	<div class="bgvideo">
+		<video src="video/jelly.mp4" autoplay loop muted type="video/mp4" ></video>
+		<h1>Сайт Артема</h1></div>
+	</header>
+<nav>	
+		<h2>Навігація</h2>
+	<a href="#aboutme">
+<button class="button-48" role="button"><span class="text">Про мене</span></button>
+	</a>
+	<a href="#youtube">
+<button class="button-48" role="button"><span class="text">Хороше відео</span></button>
+	</a>
+	<a href="#myvideo">
+<button class="button-48" role="button"><span class="text">Відео, яке я обрав</span></button>
+	</a>
+	<a href="#mycreations">
+<button class="button-48" role="button"><span class="text">Мої роботи</span></button>
+	</a>
+	<a href="#mycontacts">
+<button class="button-48" role="button"><span class="text">Мої контакти</span></button>
+	</a>
+</nav>
+<main>
+	<h2>Про мене</h2>
+	<section id="	aboutme">
+		<article>Мене звати Артем. Мені одинадцять років. Я навчаюсь дистанційно у 5 класі. На вихідних я полюбляю проводити час із сім'єю. В мене є молодший брат, з яким інколи я граю.
+		</article>
+		<article>Я полюбляю грати в комп'ютерні ігри, такі як Майнкрафт або Роблокс. Також раніше я ходив на гурток шиття, де мені дуже подобалось. Я обожнюю складати оригамі з паперу. <img src="img/109.jpg"><img src="img/108.jpg"> Це одні з моїх драконів
+		</article>
+	</section>
+	<section id="youtube">
+		<iframe width="688" height="387" src="https://www.youtube.com/embed/Z256tQ7cU4Y" title="400 днів Виживаю у Minecraft з модом TerraFirmaCraft (ПОВНИЙ ФІЛЬМ) | Майнкрафт Українською" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</section>
+	<section id="myvideo">
+		<video controls width="100%">
+			<source src="video/sunsyne.mp4" type="video/mp4">
+		</video>
+	</section>
+	
+</main>
+<aside>
+	<h2 id="mycreations">Мої роботи</h2>
+		<a href="1.html">
+<button class="button-48" role="button"><span class="text">пропуск за віком</span></button>
+	</a>
+		<a href="2.html">
+<button class="button-48" role="button"><span class="text">Пори року</span></button>
+	</a>
+	<a href="3.html">
+<button class="button-48" role="button"><span class="text">1 політ у космос</span></button>
+	</a>
+	<a href="4.html">
+<button class="button-48" role="button"><span class="text">Периметр трикутника</span></button>
+	</a>
+	<a href="5.html">
+<button class="button-48" role="button"><span class="text">периметр прямокутника</span></button>
+	</a>
+	<a href="6.html">
+<button class="button-48" role="button"><span class="text">Оцінки</span></button>
+	</a>
+	<a href="7.html">
+<button class="button-48" role="button"><span class="text">Кола</span></button>
+	</a>
+	<a href="8.html">
+<button class="button-48" role="button"><span class="text">Вгадати героя</span></button>
+	</a>
+	<a href="9.html">
+		<button class="button-48" role="button"><span class="text">Знаходження спаму</span></button>
+	</a>
+	<a href="10.html">
+		<button class="button-48" role="button"><span class="text">Підрядк у рядку</span></button>
+	</a>
+	<a href="11.html">
+		<button class="button-48" role="button"><span class="text">скільки цифр у числі</span></button>
+	</a>
+	<a href="12.html">
+		<button class="button-48" role="button"><span class="text">Компліменти</span></button>
+	</a>
+	<a href="13.html">
+		<button class="button-48" role="button"><span class="text">Знаходження букви</span></button>
+	</a>
+	<a href="14.html">
+		<button class="button-48" role="button"><span class="text">Трикутники</span></button>
+	</a>
+	<a href="index.html">
+<button class="button-48" role="button"><span class="text">index</span></button>
+	</a>
+</aside>
+<footer>
+	<h2 id="mycontacts" class="cont1">Мої контакти</h2>
+<a href="" class="fa fa-facebook"></a>
+<a href="" class="fa fa-twitter"></a>
+<a href="https://www.google.com/webhp?hl=uk&sa=X&ved=0ahUKEwipmJWuna2BAxU5DRAIHUOOBekQPAgJ" class="fa fa-google"></a>
+<a href="" class="fa fa-linkedin" target=""></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube" target=""></a>
+<a href="" class="fa fa-instagram" target=""></a>
+<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5198233.202568889!2d29.84751367158628!3d50.49323895969822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LI!3m2!1d50.4503596!2d30.524502499999997!4m0!5e0!3m2!1suk!2sua!4v1701966512195!5m2!1suk!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapg"></iframe>
+<p></p>
+</footer>
+</body>
+</html>

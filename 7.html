@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кола</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000" height="1000"
+    style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+    <script>
+        let canvas = document.getElementById("myCanvas");
+let context = canvas.getContext("2d");                                                                 
+let startAngle = 0* Math.PI;                                   
+let endAngle = 2* Math.PI;                                     
+let counterClockwise = true;                                     
+for(i=0;i!=100;i++)  {                                                
+context.beginPath();                                              
+context.lineWidth = 10;                                           
+let radius = Math.random()*75; 
+let x = Math.floor( Math.random()*canvas.width);                                         
+let  y =Math.floor( Math.random()*canvas.height);   
+context.arc(x, y, radius, startAngle, endAngle, counterClockwise);                                            
+context.fillStyle ="black";
+context.fill();
+context.strokeStyle = "red";                                 
+context.stroke();}
+    </script>
+</body>
+</html>
