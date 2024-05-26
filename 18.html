@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle</title>
+</head>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+<body>
+    <script>   
+let canvas = document.getElementById('myCanvas');
+let ctx = canvas.getContext('2d');
+
+let centerX = canvas.width / 2;
+let centerY = canvas.height / 2;
+let radius = 100;
+
+let angle = 0;
+let speed = 0.1;
+
+function drawObject() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.arc(centerX + radius * Math.cos(angle), centerY + radius * Math.sin(angle), 40, 0, Math.PI * 2);
+    ctx.fillStyle = "lightgreen";
+    ctx.fill();
+    ctx.closePath();
+}
+
+function animate() {
+    angle += speed;
+
+    drawObject();
+}
+
+setInterval(animate, 10);
+    </script>
+</body>
+</html>

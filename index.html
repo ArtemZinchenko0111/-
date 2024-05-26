@@ -204,11 +204,55 @@ img {
 		width: 100%;
 	}
 }
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
 </style>
+<script>
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml7 .letter',
+    translateY: ["1.1em", 0],
+    translateX: ["0.55em", 0],
+    translateZ: 0,
+    rotateZ: [180, 0],
+    duration: 750,
+    easing: "easeOutExpo",
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml7',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
 <header>
 	<div class="bgvideo">
 		<video src="video/jelly.mp4" autoplay loop muted type="video/mp4" ></video>
-		<h1>Сайт Артема</h1></div>
+		<h1 class="ml7">
+			<span class="text-wrapper">
+			  <span class="letters">Сайт Артема</span>
+			</span>
+		  </h1>
+		  
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script></div>
 	</header>
 <nav>	
 		<h2>Навігація</h2>
@@ -234,7 +278,7 @@ img {
 <main>
 	<h2>Про мене</h2>
 	<section id="	aboutme">
-		<article>Мене звати Артем. Мені одинадцять років. Я навчаюсь дистанційно у 5 класі. Мені подобаються ці заняття по JavaScript.<img src="img/i.jpg" class="photo">
+		<article>Мене звати Артем. Мені одинадцять років. Я навчаюсь дистанційно у 5 класі.Мені подобаються ці заняття по JavaScript.<img src="img/i.jpg" class="photo">
 		</article>
 		<article>Також я полюбляю грати в Майнкрафт і складаю Кубики Рубика, проводжу майстер класи з оригамі для дітей.
 		</article>
@@ -302,8 +346,14 @@ img {
 	<a href="17.html">
 		<button class="button-48" role="button"><span class="text">Шахівниця</span></button>
 	</a>
+	<a href="18.html">
+		<button class="button-48" role="button"><span class="text">Коло по колу</span></button>
+	</a>
+	<a href="19.html">
+		<button class="button-48" role="button"><span class="text">Кола від стін</span></button>
+	</a>
 	<a href="index.html">
-<button class="button-48" role="button"><span class="text">Випускна робота</span></button>
+		<button class="button-48" role="button"><span class="text">Випускна робота</span></button>
 	</a>
 </aside>
 <footer>
