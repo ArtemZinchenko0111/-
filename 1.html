@@ -60,7 +60,17 @@
 function AgeAcept() {
   let age  = + document.age.acept.value; 
   if (age >= 18 && age <= 100){
-    document.getElementById('result').innerHTML =`Вам ${age} років, тому можете проходити на сайт`;
+    if (age == 11 || age == 12 || age == 13 || age == 14) {
+     word = "років" 
+}else if (age%100 == 1 || age%10 == 1) {
+  word = "рік"
+}else if (age%100 == 2 || age%100 == 3 || age%100 == 4 || age%10 == 2 || age%10 == 3 || age%10 == 4) {
+  word = "роки"
+
+ }else {
+  word = "років"
+}
+    document.getElementById('result').innerHTML =`Вам ${age} ${word}, тому можете проходити на сайт`;
     }
     else {
         document.getElementById('result').innerHTML ='Вхід заборонено'
